@@ -152,8 +152,10 @@
     @page{ size: A4; margin: 0; }
     body{ background:white; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
     .rc-page{ max-width:100%; }
-    .rc-cover{ min-height:100vh; display:flex; flex-direction:column; justify-content:center; break-after:page; }
-    .rc-section{ break-after:page; border-top:none !important; min-height:100vh; display:flex; flex-direction:column; justify-content:center; }
+    .rc-cover{ min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; break-after:page; }
+    .rc-section{ break-after:page; border-top:none !important; min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; }
+    .rc-cover *, .rc-section *{ max-width:100%; }
+    .rc-logo{ flex-shrink:0; }
     .rc-closing{ min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; }
     .rc-service-card, .rc-tier-card, .rc-stat-box, .rc-week-day{ break-inside:avoid; }
   }
